@@ -5,7 +5,6 @@ module Refinery
       cache_sweeper Pages::PageSweeper
 
       crudify :'refinery/page',
-              :order => "lft ASC",
               :include => [:translations, :children],
               :paging => false
 
